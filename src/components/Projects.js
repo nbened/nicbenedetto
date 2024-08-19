@@ -15,7 +15,7 @@ function Projects() {
   ];
 
   return (
-    <div className="h-screen flex flex-col items-center justify-start bg-gray-100 w-full p-4 ">
+    <div className="flex flex-col items-center justify-start bg-gray-100 w-full p-4 ">
       <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
         {projectData.map((project, index) => (
           <ProjectCard
