@@ -1,26 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import LandingPage from './components/LandingPage';
+import Projects from './components/Projects';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <button className="btn btn-error">
-          Button
-        </button>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="h-screen flex flex-col items-center pt-20 bg-gray-100 w-full p-4 overflow-y-auto ">
+      <LandingPage />
+      <Projects />
     </div>
   );
 }
